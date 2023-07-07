@@ -35,9 +35,14 @@ The following command it will run the service and execute the commands on the co
 docker-compose -f docker-compose-liquibase.yml up
 ```
 
+```bash
+docker-compose -f docker-compose-liquibase.yml down
+```
+
 ## References
 
 https://www.liquibase.org/get-started/best-practices
 https://containers.dev/
 https://docs.docker.com/compose/compose-file/compose-file-v3/
 https://github.com/microsoft/vscode-dev-containers/blob/main/container-templates/docker-compose/.devcontainer/docker-compose.yml
+https://www.howtogeek.com/devops/how-to-connect-to-localhost-within-a-docker-container/
