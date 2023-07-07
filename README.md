@@ -27,12 +27,12 @@ The following command is to build the image again with new content
 
 
 ```bash
-docker-compose -f docker-compose-test.yml build liquibase
+docker-compose -f docker-compose-liquibase.yml build liquibase
 ```
 The following command it will run the service and execute the commands on the commands.sh
 
 ```bash
-docker-compose -f docker-compose-test.yml up
+docker-compose -f docker-compose-liquibase.yml up
 ```
 
 ## References
