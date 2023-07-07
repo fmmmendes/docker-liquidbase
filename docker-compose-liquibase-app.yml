@@ -1,0 +1,24 @@
+# https://github.com/devcontainers/templates/blob/main/src/docker-existing-docker-compose/.devcontainer/docker-compose.yml
+
+version: '3.8'
+
+services:
+  liquibase:
+    build: 
+       context: .
+       dockerfile: build/Dockerfile
+       args:
+        USERNAME: postgres
+        PASSWORD: postgres
+    container_name: liquibase_app_container
+    # depends_on:
+    #     - db
+    networks:
+      - default
+    #volumes:
+      # This is where VS Code should expect to find your project's source code and the value of "workspaceFolder" in .devcontainer/devcontainer.json
+      #- .:/workspace:cached
+    #  - .:/workspaces:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"
+networks:
+  default:
