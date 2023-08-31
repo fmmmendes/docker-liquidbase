@@ -4,29 +4,7 @@
 
 Createa a liquibase schema on your database
 
-
-
 ## Execute 
-
-### Docker-compose only
-
-Execution on this option, it needs to use the docker-compose-liquibase.yml file.
-This file contains the build of the database and the liquibase service.
-
-
-```bash
-# build
-docker-compose -f docker-compose-liquibase.yml build
-
-# run
-docker-compose -f docker-compose-liquibase.yml up
-
-# remove
-docker-compose -f docker-compose-liquibase.yml down
-```
-
-With vs code, choose the option to attach into a container running. This option will attach the vs code into the liquibase container, so we can execute the commands.
-Any changes will not update on the local folder
 
 
 ### Docker-compose with devcontainer
@@ -68,6 +46,14 @@ Then run the option on dev cotainer to execute to build the image base on docker
 In this way the container is build and run with the network host, so we can access the database on the localhost.
 Any changes will update on the local folder
 
+
+## Working with liquibase
+
+### Update changes based on a single changelog
+
+```bash
+bash liquid-update-one-changelog.sh db/changelog/changelog-001.xml
+```
 
 ## References
 

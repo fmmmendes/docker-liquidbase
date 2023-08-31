@@ -3,26 +3,22 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
     <!-- Create Building Block Table -->
-    <changeSet author="User" id="1">
+    <changeSet author="User" id="2">
+    
+        <comment>create schema</comment>
         
-        <comment>create_table_building_block</comment>
-        <sqlFile path="db/ddl/create_building_blocks.sql"/>
-        
+        <sql splitStatements="false">
+        CREATE SCHEMA IF NOT EXISTS tests;
+        </sql>
 
         <rollback>  
             
             <sql splitStatements="false">
-            DROP TABLE public.BUILDING_BLOCK;
+            DROP SCHEMA tests;
             </sql>
         
         </rollback>
 
     </changeSet>
-
-
-
-
     
-
-
 </databaseChangeLog>
