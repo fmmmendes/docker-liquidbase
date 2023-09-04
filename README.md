@@ -1,8 +1,11 @@
-# Intro
+# Liquibase Training
+
+This repo is to do some experiences and train with liquibase
 
 ## Pre requists
 
-Createa a liquibase schema on your database
+* Have a local database (see docker-compose-liquibase-db.yml)
+* Create a liquibase schema on your database
 
 ## Execute 
 

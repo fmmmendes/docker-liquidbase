@@ -1,0 +1,16 @@
+{
+	"name": "liquibase-training",
+
+	// Sets the run context to one level up instead of the .devcontainer folder.
+	"context": "..",
+
+	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+	"dockerFile": "../build/Dockerfile",
+
+	"runArgs": ["--network=host"],
+
+	"containerEnv": {
+		"USERNAME": "postgres",
+		"PASSWORD": "postgres"
+	}
+}
