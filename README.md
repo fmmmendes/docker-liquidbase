@@ -1,3 +1,5 @@
+[![build](https://github.com/fmmmendes/docker-liquidbase/actions/workflows/build.yml/badge.svg)](https://github.com/fmmmendes/docker-liquidbase/actions/workflows/build.yml)
+
 # Liquibase Training
 
 This repo is to do some experiences and train with liquibase
