@@ -19,7 +19,7 @@ On this option we only need to build the database image once, and then we can us
 docker-compose -f docker-compose-liquibase-db.yml build
 
 # run
-docker-compose -f docker-compose-liquibase-db.yml up
+docker-compose -f docker-compose-liquibase-db.yml up -d
 
 # remove
 docker-compose -f docker-compose-liquibase-db.yml down
@@ -39,10 +39,11 @@ Then run the option on dev cotainer to execute to build the image base on docker
 
 	"runArgs": ["--network=host"],
 
-	"containerEnv": {
-		"USERNAME": "postgres",
-		"PASSWORD": "postgres"
-	}
+	// replaced by the .env file
+	// "containerEnv": {
+	// 	"USERNAME": "postgres",
+	// 	"PASSWORD": "postgres"
+	// }
 }
 ```
 
