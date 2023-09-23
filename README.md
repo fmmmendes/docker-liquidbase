@@ -55,6 +55,13 @@ Any changes will update on the local folder
 
 ## Working with liquibase
 
+### Update
+
+```bash
+bash liquid-run-all.sh
+```
+
+
 ### Update changes based on a single changelog
 
 ```bash
