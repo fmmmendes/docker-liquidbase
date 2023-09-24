@@ -39,11 +39,18 @@ elif [ "${COMMAND_ARG}" = "tag-default" ]; then
 echo "execute liquibase tag (default)"
 liquibase --defaultsFile=${LB_DEFAULTS_FILE} --url=${CONN} --username=${USERNAME} --password=${PASSWORD} tag --tag=$(date +"%Y-%m-%d_%T")
 
+elif [ "${COMMAND_ARG}" = "docs" ]; then
+
+echo "execute liquibase db-docs"
+liquibase --defaultsFile=${LB_DEFAULTS_FILE} --url=${CONN} --username=${USERNAME} --password=${PASSWORD} db-doc docs
+
 else
 
 echo "input argument is not valid"
 echo "execute liquibase-commands.sh "
 echo "or type liquibase --help"
+
+liquibase --help
 
 fi
 

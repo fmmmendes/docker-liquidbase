@@ -58,7 +58,7 @@ Any changes will update on the local folder
 ### Update
 
 ```bash
-bash liquid-run-all.sh
+bash liquibase-run-all.sh
 ```
 
 
@@ -70,8 +70,8 @@ bash liquid-update-one-changelog.sh db/changelog/changelog-001.xml
 
 ## References
 
-https://www.liquibase.org/get-started/best-practices
-https://containers.dev/
-https://docs.docker.com/compose/compose-file/compose-file-v3/
-https://github.com/microsoft/vscode-dev-containers/blob/main/container-templates/docker-compose/.devcontainer/docker-compose.yml
-https://www.howtogeek.com/devops/how-to-connect-to-localhost-within-a-docker-container/
+- https://www.liquibase.org/get-started/best-practices
+- https://containers.dev/
+- https://docs.docker.com/compose/compose-file/compose-file-v3/
+- https://github.com/microsoft/vscode-dev-containers/blob/main/container-templates/docker-compose/.devcontainer/docker-compose.yml
+- https://www.howtogeek.com/devops/how-to-connect-to-localhost-within-a-docker-container/
